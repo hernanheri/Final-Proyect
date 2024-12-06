@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Gestión de Tareas</h1>
+    </header>
+    <main class="main-container">
+        <section class="project-section">
+            <h2>Proyectos</h2>
+            <ul id="project-list" class="project-list">
+                <!-- Proyectos dinámicos aquí -->
+            </ul>
+            <button id="new-project-btn" class="btn">+ Crear Proyecto</button>
+        </section>
+
+        <section class="task-section">
+            <h2>Tareas</h2>
+            <ul id="task-list" class="task-list">
+                <!-- Tareas dinámicas aquí -->
+            </ul>
+            <button id="new-task-btn" class="btn">+ Crear Tarea</button>
+        </section>
+    </main>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="modal-title">Crear Proyecto</h3>
+            <form id="modal-form">
+                <input type="text" id="modal-input" placeholder="Nombre" required>
+                <button type="submit" class="btn">Guardar</button>
+            </form>
+            <button id="modal-close" class="btn close-btn">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
